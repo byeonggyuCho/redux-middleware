@@ -36,10 +36,9 @@ function* goToHomeSaga() {
 
 // 사가들을 합치기
 export function* postsSaga() {
-  yield takeEvery(GET_POSTS, getPostsSaga);
   yield takeEvery(GET_POST, getPostSaga);
+  yield takeEvery(GET_POSTS, getPostsSaga);
   yield takeEvery(GO_TO_HOME, goToHomeSaga);
-
 }
 
 
@@ -54,6 +53,7 @@ const initialState = {
   post: {}
 };
 
+// reducer
 export default function posts(state = initialState, action) {
     switch (action.type) {
       case GET_POSTS:

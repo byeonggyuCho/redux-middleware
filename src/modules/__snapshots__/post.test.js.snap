@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`post actions fails 1`] = `
+Array [
+  Object {
+    "meta": 0,
+    "payload": 0,
+    "type": "GET_POST",
+  },
+]
+`;
+
+exports[`post actions getPost dispatches proper actions 1`] = `
+Array [
+  Object {
+    "meta": 1,
+    "payload": 1,
+    "type": "GET_POST",
+  },
+]
+`;
